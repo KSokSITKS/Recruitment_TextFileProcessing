@@ -39,7 +39,7 @@ namespace TextFileProcessing
 
 				if (openFileDialog.ShowDialog() == DialogResult.OK)
 				{
-					string filePath = openFileDialog.FileName;
+					var filePath = openFileDialog.FileName;
 					
 					this.txtFilePath.Text = filePath;
 				}
