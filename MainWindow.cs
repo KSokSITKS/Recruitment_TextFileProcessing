@@ -49,7 +49,7 @@ namespace TextFileProcessing
 		private async void btnProcessFile_Click(object sender, EventArgs e)
 		{
 			var textDataProvider = new TextDataFromDiscFileProvider(this.txtFilePath.Text);
-			var processingStrategiesSelected = this.GetProcessingStrategyTypes();
+			var processingStrategiesSelected = this.GetSelectedProcessingStrategyTypes();
 			var processingStrategies = this.textDataProcessingStrategiesListFactory.Create(processingStrategiesSelected);
 
 			var processingResults = await this.textDataProcessingService.ProcessData(textDataProvider, processingStrategies);
@@ -57,7 +57,7 @@ namespace TextFileProcessing
 			this.dgProcessingResults.DataSource = new BindingSource { DataSource = processingResults };
 		}
 
-		private List<TextDataProcessingStrategyType> GetProcessingStrategyTypes()
+		private List<TextDataProcessingStrategyType> GetSelectedProcessingStrategyTypes()
 		{
 			return chklbStrategyTypesSelection.CheckedItems
 				.Cast<CheckedListBoxItem>()
