@@ -16,5 +16,23 @@ namespace TextFileProcessing
         {
             InitializeComponent();
         }
-    }
+
+		private void btnFileSearch_Click(object sender, EventArgs e)
+		{
+			using (var openFileDialog = new OpenFileDialog())
+			{
+				openFileDialog.InitialDirectory = "c:\\";
+				openFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+				openFileDialog.FilterIndex = 1;
+				openFileDialog.RestoreDirectory = true;
+
+				if (openFileDialog.ShowDialog() == DialogResult.OK)
+				{
+					string filePath = openFileDialog.FileName;
+					
+					this.txtFilePath.Text = filePath;
+				}
+			}
+		}
+	}
 }
