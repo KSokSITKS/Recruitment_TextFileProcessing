@@ -59,15 +59,10 @@ namespace TextFileProcessing
 
 		private List<TextDataProcessingStrategyType> GetProcessingStrategyTypes()
 		{
-			var processingStrategyTypes = new List<TextDataProcessingStrategyType>();
-
-			chklbStrategyTypesSelection.CheckedItems
+			return chklbStrategyTypesSelection.CheckedItems
 				.Cast<CheckedListBoxItem>()
 				.Select(item => item.Value)
-				.ToList()
-				.ForEach(processingStrategyTypes.Add);
-
-			return processingStrategyTypes;
+				.ToList();
 		}
 
 		private void PopulateCheckedListBox()
