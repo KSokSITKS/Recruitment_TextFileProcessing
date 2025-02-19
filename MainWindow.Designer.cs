@@ -32,6 +32,9 @@
 			this.txtFilePath = new System.Windows.Forms.TextBox();
 			this.btnFileSearch = new System.Windows.Forms.Button();
 			this.btnProcessFile = new System.Windows.Forms.Button();
+			this.dgProcessingResults = new System.Windows.Forms.DataGridView();
+			this.lblProcessingSummary = new System.Windows.Forms.Label();
+			((System.ComponentModel.ISupportInitialize)(this.dgProcessingResults)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// lblFilePath
@@ -69,18 +72,43 @@
 			this.btnProcessFile.TabIndex = 3;
 			this.btnProcessFile.Text = "Przetwarzaj plik";
 			this.btnProcessFile.UseVisualStyleBackColor = true;
+			this.btnProcessFile.Click += new System.EventHandler(this.btnProcessFile_Click);
+			// 
+			// dgProcessingResults
+			// 
+			this.dgProcessingResults.AllowUserToAddRows = false;
+			this.dgProcessingResults.AllowUserToDeleteRows = false;
+			this.dgProcessingResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgProcessingResults.Location = new System.Drawing.Point(15, 174);
+			this.dgProcessingResults.Name = "dgProcessingResults";
+			this.dgProcessingResults.ReadOnly = true;
+			this.dgProcessingResults.Size = new System.Drawing.Size(773, 264);
+			this.dgProcessingResults.TabIndex = 4;
+			// 
+			// lblProcessingSummary
+			// 
+			this.lblProcessingSummary.AutoSize = true;
+			this.lblProcessingSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblProcessingSummary.Location = new System.Drawing.Point(12, 138);
+			this.lblProcessingSummary.Name = "lblProcessingSummary";
+			this.lblProcessingSummary.Size = new System.Drawing.Size(238, 22);
+			this.lblProcessingSummary.TabIndex = 5;
+			this.lblProcessingSummary.Text = "Podumowanie przetwarzania";
 			// 
 			// MainWindow
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.lblProcessingSummary);
+			this.Controls.Add(this.dgProcessingResults);
 			this.Controls.Add(this.btnProcessFile);
 			this.Controls.Add(this.btnFileSearch);
 			this.Controls.Add(this.txtFilePath);
 			this.Controls.Add(this.lblFilePath);
 			this.Name = "MainWindow";
 			this.Text = "Text File Processing";
+			((System.ComponentModel.ISupportInitialize)(this.dgProcessingResults)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -92,6 +120,8 @@
 		private System.Windows.Forms.TextBox txtFilePath;
 		private System.Windows.Forms.Button btnFileSearch;
 		private System.Windows.Forms.Button btnProcessFile;
+		private System.Windows.Forms.DataGridView dgProcessingResults;
+		private System.Windows.Forms.Label lblProcessingSummary;
 	}
 }
 
