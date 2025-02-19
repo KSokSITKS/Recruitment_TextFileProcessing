@@ -34,6 +34,7 @@
 			this.btnProcessFile = new System.Windows.Forms.Button();
 			this.dgProcessingResults = new System.Windows.Forms.DataGridView();
 			this.lblProcessingSummary = new System.Windows.Forms.Label();
+			this.chklbStrategyTypesSelection = new System.Windows.Forms.CheckedListBox();
 			((System.ComponentModel.ISupportInitialize)(this.dgProcessingResults)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -66,7 +67,7 @@
 			// btnProcessFile
 			// 
 			this.btnProcessFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnProcessFile.Location = new System.Drawing.Point(13, 65);
+			this.btnProcessFile.Location = new System.Drawing.Point(12, 163);
 			this.btnProcessFile.Name = "btnProcessFile";
 			this.btnProcessFile.Size = new System.Drawing.Size(163, 42);
 			this.btnProcessFile.TabIndex = 3;
@@ -79,27 +80,36 @@
 			this.dgProcessingResults.AllowUserToAddRows = false;
 			this.dgProcessingResults.AllowUserToDeleteRows = false;
 			this.dgProcessingResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgProcessingResults.Location = new System.Drawing.Point(15, 174);
+			this.dgProcessingResults.Location = new System.Drawing.Point(15, 233);
 			this.dgProcessingResults.Name = "dgProcessingResults";
 			this.dgProcessingResults.ReadOnly = true;
-			this.dgProcessingResults.Size = new System.Drawing.Size(773, 264);
+			this.dgProcessingResults.Size = new System.Drawing.Size(773, 205);
 			this.dgProcessingResults.TabIndex = 4;
 			// 
 			// lblProcessingSummary
 			// 
 			this.lblProcessingSummary.AutoSize = true;
 			this.lblProcessingSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblProcessingSummary.Location = new System.Drawing.Point(12, 138);
+			this.lblProcessingSummary.Location = new System.Drawing.Point(12, 208);
 			this.lblProcessingSummary.Name = "lblProcessingSummary";
 			this.lblProcessingSummary.Size = new System.Drawing.Size(238, 22);
 			this.lblProcessingSummary.TabIndex = 5;
 			this.lblProcessingSummary.Text = "Podumowanie przetwarzania";
+			// 
+			// chklbStrategyTypesSelection
+			// 
+			this.chklbStrategyTypesSelection.FormattingEnabled = true;
+			this.chklbStrategyTypesSelection.Location = new System.Drawing.Point(12, 39);
+			this.chklbStrategyTypesSelection.Name = "chklbStrategyTypesSelection";
+			this.chklbStrategyTypesSelection.Size = new System.Drawing.Size(133, 109);
+			this.chklbStrategyTypesSelection.TabIndex = 6;
 			// 
 			// MainWindow
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.chklbStrategyTypesSelection);
 			this.Controls.Add(this.lblProcessingSummary);
 			this.Controls.Add(this.dgProcessingResults);
 			this.Controls.Add(this.btnProcessFile);
@@ -122,6 +132,7 @@
 		private System.Windows.Forms.Button btnProcessFile;
 		private System.Windows.Forms.DataGridView dgProcessingResults;
 		private System.Windows.Forms.Label lblProcessingSummary;
+		private System.Windows.Forms.CheckedListBox chklbStrategyTypesSelection;
 	}
 }
 

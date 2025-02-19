@@ -4,6 +4,8 @@ using System;
 using System.Windows.Forms;
 using TextFileProcessing;
 using TextFileProcessing.Exceptions;
+using TextFileProcessing.TextDataProcessing;
+using TextFileProcessing.TextDataProcessing.Interfaces;
 
 namespace AverageExchangeRate
 {
@@ -40,6 +42,9 @@ namespace AverageExchangeRate
 		private static IServiceCollection ConfigureServices()
 		{
 			var services = new ServiceCollection();
+
+			services.AddSingleton<ITextDataProcessingService, TextDataProcessingService>();
+			services.AddSingleton<ITextDataProcessingStrategiesListFactory, TextDataProcessingStrategiesListFactory>();
 
 			services.AddTransient<MainWindow>();
 
