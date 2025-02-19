@@ -31,6 +31,7 @@
 			this.lblFilePath = new System.Windows.Forms.Label();
 			this.txtFilePath = new System.Windows.Forms.TextBox();
 			this.btnFileSearch = new System.Windows.Forms.Button();
+			this.btnProcessFile = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lblFilePath
@@ -59,11 +60,22 @@
 			this.btnFileSearch.UseVisualStyleBackColor = true;
 			this.btnFileSearch.Click += new System.EventHandler(this.btnFileSearch_Click);
 			// 
+			// btnProcessFile
+			// 
+			this.btnProcessFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnProcessFile.Location = new System.Drawing.Point(13, 65);
+			this.btnProcessFile.Name = "btnProcessFile";
+			this.btnProcessFile.Size = new System.Drawing.Size(163, 42);
+			this.btnProcessFile.TabIndex = 3;
+			this.btnProcessFile.Text = "Przetwarzaj plik";
+			this.btnProcessFile.UseVisualStyleBackColor = true;
+			// 
 			// MainWindow
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.btnProcessFile);
 			this.Controls.Add(this.btnFileSearch);
 			this.Controls.Add(this.txtFilePath);
 			this.Controls.Add(this.lblFilePath);
@@ -79,6 +91,7 @@
 		private System.Windows.Forms.Label lblFilePath;
 		private System.Windows.Forms.TextBox txtFilePath;
 		private System.Windows.Forms.Button btnFileSearch;
+		private System.Windows.Forms.Button btnProcessFile;
 	}
 }
 
