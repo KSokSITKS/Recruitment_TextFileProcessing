@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35806.99 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextFileProcessing", "TextFileProcessing.csproj", "{2441D696-B5B6-4BCC-BE01-03365C58C093}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{B41497D6-099C-432A-BD0B-F1F32592DF4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2441D696-B5B6-4BCC-BE01-03365C58C093}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2441D696-B5B6-4BCC-BE01-03365C58C093}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2441D696-B5B6-4BCC-BE01-03365C58C093}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B41497D6-099C-432A-BD0B-F1F32592DF4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B41497D6-099C-432A-BD0B-F1F32592DF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B41497D6-099C-432A-BD0B-F1F32592DF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B41497D6-099C-432A-BD0B-F1F32592DF4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
